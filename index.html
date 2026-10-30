@@ -16,6 +16,12 @@
        SISTEMA CSS3 NATIVO AUTOCONTENIDO (MOBILE & TABLET FIRST — CERO SVGs)
        ========================================================================= -->
   <style>
+    /* Logo corporativo oficial: proporciones intactas en todas las pantallas */
+    .brand-logo { display: flex; flex: 0 1 auto; align-items: center; min-width: 0; max-width: min(48vw, 300px); padding: 0.3rem 0; }
+    .brand-logo img { display: block; width: 100%; height: auto; aspect-ratio: 1519 / 347; object-fit: contain; }
+    @media (max-width: 639px) { .brand-logo { max-width: min(58vw, 240px); } }
+    @media (min-width: 1024px) { .brand-logo { max-width: 275px; } }
+
     @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; } }
     :root {
       --navy: #061A38;
@@ -1198,16 +1204,7 @@
       
       <!-- Logotipo Corporativo en HTML/CSS Puro (Nunca se deforma en móviles ni tablets) -->
       <a href="#inicio" onclick="handleMenuClick(event, 'inicio')" class="brand-logo" aria-label="METALSA S.A.C. - Inicio">
-        <div class="brand-arch">
-          <span class="brand-arch-bar-white"></span>
-          <span class="brand-arch-bar-amber"></span>
-        </div>
-        <div class="brand-title">
-          MET<span class="accent-a">A</span>LS<span class="accent-a">A</span>
-        </div>
-        <div class="brand-subtitle">
-          DISEÑO <span class="sep">|</span> CONSTRUCCIÓN <span class="sep">|</span> MONTAJE
-        </div>
+        <img src="assets/logo-metalsa.png" alt="METALSA — Diseño, Construcción y Montaje" width="1519" height="347" decoding="async" fetchpriority="high" />
       </a>
 
       <!-- Navegación Desktop -->
