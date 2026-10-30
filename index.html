@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>METALSA S.A.C. | Diseño, Construcción y Montaje de Estructuras Metálicas</title>
   <meta name="description" content="En Metalsa Diseño, Construcción y Montaje brindamos soluciones integrales de ingeniería, fabricación y montaje de estructuras metálicas en Arequipa y todo el Perú." />
+  <meta name="theme-color" content="#061A38" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_PE" />
+  <meta property="og:site_name" content="METALSA S.A.C." />
+  <meta property="og:title" content="METALSA S.A.C. | Diseño, Construcción y Montaje" />
+  <meta property="og:description" content="Diseño, fabricación y montaje de estructuras metálicas en Arequipa y todo el Perú." />
+  <meta property="og:image" content="/assets/logo-metalsa.png" />
   <meta name="keywords" content="METALSA SAC, estructuras metálicas Arequipa, techos parabólicos, fabricación metalmecánica, montaje industrial, sistemas drywall, RUC 20615690652" />
 
   <!-- Tipografías Corporativas Industriales -->
@@ -1177,9 +1184,18 @@
     }
 
     .hidden { display: none !important; }
+  
+    .footer-brand-image{display:block;width:min(100%,280px);height:auto;object-fit:contain}
+    .skip-link{position:fixed;top:-100px;left:1rem;z-index:99999;background:#fff;color:#061A38;padding:.75rem 1rem;font-weight:800}
+    .skip-link:focus{top:0}
+    :focus-visible{outline:3px solid #F59E0B;outline-offset:3px}
+    .page-view img{max-width:100%}
+    .brand-logo img{max-height:75px}
+    @media(max-width:640px){.brand-logo{max-width:min(60vw,245px)}.brand-logo img{max-height:60px}.btn{white-space:normal;text-align:center}}
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#page-inicio">Saltar al contenido</a>
 
   <!-- =====================================================================
        1. TOPBAR CORPORATIVO (DATOS VERIFICADOS DEL BROCHURE)
@@ -1202,7 +1218,7 @@
   <header class="site-header">
     <div class="container header-inner">
       
-      <!-- Logotipo Corporativo en HTML/CSS Puro (Nunca se deforma en móviles ni tablets) -->
+      <!-- Logotipo corporativo oficial -->
       <a href="#inicio" onclick="handleMenuClick(event, 'inicio')" class="brand-logo" aria-label="METALSA S.A.C. - Inicio">
         <img src="/assets/logo-metalsa.png" alt="METALSA — Diseño, Construcción y Montaje" width="1519" height="347" decoding="async" fetchpriority="high" />
       </a>
@@ -1331,8 +1347,7 @@
         <!-- Diapositiva 1: Identidad Principal -->
         <div class="hero-slide active">
           <img
-            src="img/techos-curvos.jpg"
-            onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1600&q=80';"
+            src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1600&q=80"
             alt="Estructuras Metálicas METALSA S.A.C."
             class="hero-slide-img"
             decoding="async"
@@ -1366,8 +1381,7 @@
         <!-- Diapositiva 2: Techos y Estructuras Metálicas -->
         <div class="hero-slide">
           <img
-            src="img/estructura-dos-niveles.jpg"
-            onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1541888946425-d09bb18086f6?auto=format&fit=crop&w=1600&q=80';"
+            src="https://images.unsplash.com/photo-1541888946425-d09bb18086f6?auto=format&fit=crop&w=1600&q=80"
             alt="Techos y Estructuras Metálicas METALSA S.A.C."
             class="hero-slide-img"
             loading="lazy"
@@ -1402,8 +1416,7 @@
         <!-- Diapositiva 3: Fabricación Metalmecánica -->
         <div class="hero-slide">
           <img
-            src="img/plataforma-puente-grua.jpg"
-            onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1600&q=80';"
+            src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1600&q=80"
             alt="Fabricación Metalmecánica METALSA S.A.C."
             class="hero-slide-img"
             loading="lazy"
@@ -1437,8 +1450,7 @@
         <!-- Diapositiva 4: Construcción y Servicios -->
         <div class="hero-slide">
           <img
-            src="img/montaje-arcos.jpg"
-            onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1600&q=80';"
+            src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1600&q=80"
             alt="Construcción y Servicios METALSA S.A.C."
             class="hero-slide-img"
             loading="lazy"
@@ -1492,8 +1504,7 @@
         <div class="container split-layout">
           <div class="photo-frame-wide" onclick="openLightbox('foto-p4b')" style="cursor: pointer;">
             <img
-              src="img/estructura-dos-niveles.jpg"
-              onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1541888946425-d09bb18086f6?auto=format&fit=crop&w=1200&q=80';"
+              src="https://images.unsplash.com/photo-1541888946425-d09bb18086f6?auto=format&fit=crop&w=1200&q=80"
               alt="Estructura metálica industrial de dos niveles METALSA"
               loading="lazy"
               decoding="async"
@@ -1553,8 +1564,7 @@
             <article class="card">
               <div class="photo-frame" onclick="handleMenuClick(event, 'techos')" style="cursor: pointer; border-radius: 0; border: none;">
                 <img
-                  src="img/techos-curvos.jpg"
-                  onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=900&q=80';"
+                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=900&q=80"
                   alt="Techos y Estructuras Metálicas"
                   loading="lazy"
                   decoding="async"
@@ -1588,8 +1598,7 @@
             <article class="card">
               <div class="photo-frame" onclick="handleMenuClick(event, 'metalmecanica')" style="cursor: pointer; border-radius: 0; border: none;">
                 <img
-                  src="img/plataforma-puente-grua.jpg"
-                  onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=80';"
+                  src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=80"
                   alt="Fabricación Metalmecánica"
                   loading="lazy"
                   decoding="async"
@@ -1623,8 +1632,7 @@
             <article class="card">
               <div class="photo-frame" onclick="handleMenuClick(event, 'construccion')" style="cursor: pointer; border-radius: 0; border: none;">
                 <img
-                  src="img/puerto-92.jpg"
-                  onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80';"
+                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80"
                   alt="Construcción y Servicios"
                   loading="lazy"
                   decoding="async"
@@ -1711,8 +1719,7 @@
           <div class="grid-3">
             <div class="photo-frame" onclick="openLightbox('foto-p3')" style="cursor: pointer;">
               <img
-                src="img/techos-curvos.jpg"
-                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=900&q=80';"
+                src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=900&q=80"
                 alt="Cobertura Industrial Parabólica de Gran Luz"
                 loading="lazy"
                 decoding="async"
@@ -1721,8 +1728,7 @@
             </div>
             <div class="photo-frame" onclick="openLightbox('foto-p4a')" style="cursor: pointer;">
               <img
-                src="img/plataforma-puente-grua.jpg"
-                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=80';"
+                src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=80"
                 alt="Plataforma Estructural y Puente Grúa"
                 loading="lazy"
                 decoding="async"
@@ -1731,8 +1737,7 @@
             </div>
             <div class="photo-frame" onclick="openLightbox('foto-p6')" style="cursor: pointer;">
               <img
-                src="img/montaje-arcos.jpg"
-                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=900&q=80';"
+                src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=900&q=80"
                 alt="Montaje de Arcos Reticulados en Obra"
                 loading="lazy"
                 decoding="async"
@@ -1818,8 +1823,7 @@
           <div style="display: flex; flex-direction: column; gap: 1.5rem;">
             <div class="photo-frame-wide" onclick="openLightbox('foto-p6')" style="cursor: pointer;">
               <img
-                src="img/montaje-arcos.jpg"
-                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1200&q=80';"
+                src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1200&q=80"
                 alt="Montaje estructural METALSA S.A.C."
                 loading="lazy"
                 decoding="async"
@@ -1905,8 +1909,7 @@
             <div class="specialty-row-grid">
               <div class="photo-frame" onclick="handleMenuClick(event, 'techos')" style="cursor: pointer; border-radius: 0; border: none; height: 100%;">
                 <img
-                  src="img/techos-curvos.jpg"
-                  onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1000&q=80';"
+                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1000&q=80"
                   alt="Techos y Estructuras Metálicas"
                   loading="lazy"
                   decoding="async"
@@ -1949,8 +1952,7 @@
             <div class="specialty-row-grid">
               <div class="photo-frame" onclick="handleMenuClick(event, 'metalmecanica')" style="cursor: pointer; border-radius: 0; border: none; height: 100%;">
                 <img
-                  src="img/plataforma-puente-grua.jpg"
-                  onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1000&q=80';"
+                  src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1000&q=80"
                   alt="Fabricación Metalmecánica"
                   loading="lazy"
                   decoding="async"
@@ -1993,8 +1995,7 @@
             <div class="specialty-row-grid">
               <div class="photo-frame" onclick="handleMenuClick(event, 'construccion')" style="cursor: pointer; border-radius: 0; border: none; height: 100%;">
                 <img
-                  src="img/puerto-92.jpg"
-                  onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80';"
+                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80"
                   alt="Construcción y Servicios"
                   loading="lazy"
                   decoding="async"
@@ -2103,8 +2104,7 @@
           <div>
             <div class="photo-frame-wide" onclick="openLightbox('foto-p3')" style="cursor: pointer; margin-bottom: 2rem;">
               <img
-                src="img/techos-curvos.jpg"
-                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1400&q=80';"
+                src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1400&q=80"
                 alt="Cobertura Industrial Parabólica de Gran Luz"
                 loading="lazy"
                 decoding="async"
@@ -2276,8 +2276,7 @@
             <div class="grid-2" style="margin-bottom: 2rem;">
               <div class="photo-frame" onclick="openLightbox('foto-p4a')" style="cursor: pointer;">
                 <img
-                  src="img/plataforma-puente-grua.jpg"
-                  onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1000&q=80';"
+                  src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1000&q=80"
                   alt="Plataforma Estructural y Puente Grúa"
                   loading="lazy"
                   decoding="async"
@@ -2286,8 +2285,7 @@
               </div>
               <div class="photo-frame" onclick="openLightbox('foto-p4b')" style="cursor: pointer;">
                 <img
-                  src="img/estructura-dos-niveles.jpg"
-                  onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1541888946425-d09bb18086f6?auto=format&fit=crop&w=1000&q=80';"
+                  src="https://images.unsplash.com/photo-1541888946425-d09bb18086f6?auto=format&fit=crop&w=1000&q=80"
                   alt="Edificación Metálica de Dos Niveles"
                   loading="lazy"
                   decoding="async"
@@ -2458,8 +2456,7 @@
           <div>
             <div class="photo-frame-wide" onclick="openLightbox('foto-p5')" style="cursor: pointer; margin-bottom: 2rem;">
               <img
-                src="img/puerto-92.jpg"
-                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=80';"
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=80"
                 alt="Proyecto Comercial y Estructural Puerto 92"
                 loading="lazy"
                 decoding="async"
@@ -2626,8 +2623,7 @@
             <article data-category="techos" class="gallery-item card">
               <div class="photo-frame" onclick="openLightbox('foto-p3')" style="cursor: pointer; border-radius: 0; border: none;">
                 <img
-                  src="img/techos-curvos.jpg"
-                  onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=900&q=80';"
+                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=900&q=80"
                   alt="Cobertura Industrial Parabólica de Gran Luz"
                   loading="lazy"
                   decoding="async"
@@ -2653,8 +2649,7 @@
             <article data-category="metalmecanica" class="gallery-item card">
               <div class="photo-frame" onclick="openLightbox('foto-p4a')" style="cursor: pointer; border-radius: 0; border: none;">
                 <img
-                  src="img/plataforma-puente-grua.jpg"
-                  onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=80';"
+                  src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=80"
                   alt="Plataforma Estructural y Puente Grúa"
                   loading="lazy"
                   decoding="async"
@@ -2680,8 +2675,7 @@
             <article data-category="metalmecanica" class="gallery-item card">
               <div class="photo-frame" onclick="openLightbox('foto-p4b')" style="cursor: pointer; border-radius: 0; border: none;">
                 <img
-                  src="img/estructura-dos-niveles.jpg"
-                  onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1541888946425-d09bb18086f6?auto=format&fit=crop&w=900&q=80';"
+                  src="https://images.unsplash.com/photo-1541888946425-d09bb18086f6?auto=format&fit=crop&w=900&q=80"
                   alt="Edificación Metálica de Dos Niveles"
                   loading="lazy"
                   decoding="async"
@@ -2707,8 +2701,7 @@
             <article data-category="construccion" class="gallery-item card">
               <div class="photo-frame" onclick="openLightbox('foto-p5')" style="cursor: pointer; border-radius: 0; border: none;">
                 <img
-                  src="img/puerto-92.jpg"
-                  onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80';"
+                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80"
                   alt="Proyecto Comercial y Estructural Puerto 92"
                   loading="lazy"
                   decoding="async"
@@ -2734,8 +2727,7 @@
             <article data-category="techos" class="gallery-item card">
               <div class="photo-frame" onclick="openLightbox('foto-p6')" style="cursor: pointer; border-radius: 0; border: none;">
                 <img
-                  src="img/montaje-arcos.jpg"
-                  onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=900&q=80';"
+                  src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=900&q=80"
                   alt="Montaje de Arcos Reticulados en Obra"
                   loading="lazy"
                   decoding="async"
@@ -2977,12 +2969,7 @@
       <div class="footer-grid">
         
         <div>
-          <div class="brand-title" style="font-size: 1.5rem;">
-            MET<span class="accent-a">A</span>LS<span class="accent-a">A</span>&nbsp;<span style="font-size: 1rem; color: var(--amber);">S.A.C.</span>
-          </div>
-          <div class="brand-subtitle" style="margin-top: 0.35rem;">
-            DISEÑO <span class="sep">|</span> CONSTRUCCIÓN <span class="sep">|</span> MONTAJE
-          </div>
+          <a href="#inicio" onclick="handleMenuClick(event, 'inicio')" aria-label="Volver al inicio de METALSA"><img src="/assets/logo-metalsa.png" alt="METALSA S.A.C. — Diseño, Construcción y Montaje" width="1519" height="347" loading="lazy" decoding="async" class="footer-brand-image"></a>
           <p style="font-size: 0.84rem; color: var(--slate-300); margin-top: 0.9rem; max-width: 340px;">
             Diseñamos. Fabricamos. Construimos. Soluciones metálicas para grandes proyectos industriales, comerciales y de construcción.
           </p>
@@ -3166,6 +3153,14 @@
       });
 
       document.title = ROUTES_META[validRoute].title;
+      document.querySelectorAll(".nav-link[data-route]").forEach(link => {
+        if (link.getAttribute("data-route") === activeNavKey) link.setAttribute("aria-current", "page");
+        else link.removeAttribute("aria-current");
+      });
+      const ogTitle = document.querySelector('meta[property="og:title"]');
+      if (ogTitle) ogTitle.setAttribute("content", ROUTES_META[validRoute].title);
+      const ogDesc = document.querySelector('meta[property="og:description"]');
+      if (ogDesc) ogDesc.setAttribute("content", ROUTES_META[validRoute].desc);
       const metaDesc = document.querySelector('meta[name="description"]');
       if (metaDesc) metaDesc.setAttribute('content', ROUTES_META[validRoute].desc);
 
@@ -3313,7 +3308,7 @@
         return;
       }
       const names = Array.from(inputEl.files).map(f => f.name);
-      label.textContent = 'Archivos seleccionados (' + names.length + '): ' + names.join(', ');
+      label.textContent = 'Archivos seleccionados (' + names.length + '): ' + names.join(', ') + '. Los archivos deben adjuntarse manualmente en WhatsApp o correo.';
     }
 
     function getQuoteFormData() {
@@ -3379,7 +3374,7 @@
 
       showQuoteStatus(
         false,
-        '<div><strong>✓ Solicitud preparada correctamente.</strong> Elija el canal de envío inmediato:<div style="margin-top:0.75rem; display:flex; flex-wrap:wrap; gap:0.6rem;">' +
+        '<div><strong>✓ Datos validados. Su solicitud todavía no se ha enviado.</strong> Elija un canal y confirme el envío en WhatsApp o en su aplicación de correo:<div style="margin-top:0.75rem; display:flex; flex-wrap:wrap; gap:0.6rem;">' +
         '<a href="mailto:' + destinatario + '?subject=' + subject + '&body=' + body + '" class="btn btn-navy">Enviar por Correo</a>' +
         '<a href="https://wa.me/51972552718?text=' + waText + '" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">Enviar por WhatsApp (972 552 718)</a>' +
         '</div></div>'
