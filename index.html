@@ -14,7 +14,7 @@
   <meta property="og:image" content="/assets/logo-metalsa.png" />
   <meta name="keywords" content="METALSA SAC, estructuras metálicas Arequipa, techos parabólicos, fabricación metalmecánica, montaje industrial, sistemas drywall, RUC 20615690652" />
 
-  <!-- Tipografías Corporativas Industriales -->
+  <!-- Tipografías de interfaz corporativa -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
@@ -1192,6 +1192,68 @@
     .page-view img{max-width:100%}
     .brand-logo img{max-height:75px}
     @media(max-width:640px){.brand-logo{max-width:min(60vw,245px)}.brand-logo img{max-height:60px}.btn{white-space:normal;text-align:center}}
+  
+    /* METALSA / Material Design 3-inspired visual system — 2026 */
+    :root {
+      --navy:#183153;--navy-dark:#10243f;--blue:#295b93;--royal:#3266a5;
+      --amber:#efad21;--amber-hover:#d99712;--orange:#b87509;
+      --slate-900:#1b2533;--slate-800:#2d3a49;--slate-700:#465468;
+      --slate-600:#59687a;--slate-500:#748093;--slate-300:#c7d0da;
+      --slate-200:#e1e7ee;--slate-100:#eef2f7;--slate-50:#f6f8fc;
+      --radius:18px;--radius-lg:28px;
+      --shadow-sm:0 2px 8px rgba(24,49,83,.055);
+      --shadow-md:0 8px 24px rgba(24,49,83,.09);
+      --shadow-lg:0 18px 42px rgba(24,49,83,.13);
+    }
+    html{scroll-behavior:smooth}
+    body{background:#f6f8fc;color:#263447;font-family:'Inter',sans-serif;letter-spacing:-.012em}
+    .container{width:min(100% - 40px,1200px)}
+    .topbar{background:#10243f;border:0}
+    .topbar-inner{min-height:35px}
+    .site-header{background:rgba(255,255,255,.97);border-bottom:1px solid #e5eaf1;box-shadow:0 3px 14px rgba(20,42,75,.055);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+    .header-inner{min-height:82px;gap:1rem}
+    .brand-logo{max-width:min(42vw,250px);padding:.4rem 0}
+    .brand-logo img{width:100%;max-height:66px}
+    .nav-link{color:#35455a;border-radius:100px;transition:background .2s,color .2s}
+    .nav-link:hover,.nav-link.active{color:#183e6b;background:#e8f0fb}
+    .nav-dropdown-menu{border:1px solid #e4e9f2;border-radius:20px;box-shadow:var(--shadow-lg);overflow:hidden}
+    .btn{border-radius:100px;min-height:44px;padding:.78rem 1.45rem;font-weight:700;letter-spacing:0;text-transform:none;box-shadow:none;transition:background .2s,box-shadow .2s,transform .2s}
+    .btn:hover{box-shadow:0 6px 16px rgba(20,49,85,.15);transform:translateY(-2px)}
+    .btn-amber{background:#efad21;color:#1e2c42}
+    .btn-navy{background:#24558d;color:#fff}
+    .btn-outline-navy{border-color:#7c9abf;color:#24558d;background:#fff}
+    .btn-whatsapp{border-radius:100px}
+    .hero-slider{border:0;min-height:600px;background:#10243f}
+    .hero-slide-overlay{background:linear-gradient(90deg,rgba(8,27,52,.89),rgba(13,38,66,.54) 68%,rgba(13,38,66,.12))!important}
+    .hero-text-box{max-width:750px;background:rgba(13,35,62,.30);border:1px solid rgba(255,255,255,.13);border-radius:28px;padding:clamp(1.3rem,3vw,2.7rem);backdrop-filter:blur(4px)}
+    .hero-title{font-family:'Inter',sans-serif;font-size:clamp(2.35rem,5.5vw,4.7rem);font-weight:800;line-height:1.08;letter-spacing:-.05em}
+    .hero-title span{color:#ffc44d}
+    .hero-lead{font-family:'Inter',sans-serif;font-weight:450;line-height:1.65}
+    .sub-badge,.sub-badge-dark{border:0;border-radius:100px;padding:.5rem .95rem;font-family:'Inter',sans-serif;font-size:.73rem;letter-spacing:.055em}
+    .sub-badge{background:#e9f1fb;color:#28588e}
+    .sub-badge-dark{background:rgba(255,255,255,.16);color:#fff}
+    .section{padding-top:clamp(3.5rem,6vw,6rem);padding-bottom:clamp(3.5rem,6vw,6rem)}
+    .section-light{background:#f1f5fa;border:0}
+    .section-title{font-family:'Inter',sans-serif;font-size:clamp(1.8rem,3.5vw,2.9rem);font-weight:800;letter-spacing:-.045em;text-transform:none;line-height:1.16}
+    .page-banner{background:#e9f0fa;color:#173454;border:0;padding:clamp(3rem,6vw,5.5rem) 0}
+    .banner-title{color:#173454;font-family:'Inter',sans-serif;font-weight:800;letter-spacing:-.045em;text-transform:none;font-size:clamp(2rem,4vw,3.5rem)}
+    .banner-subtitle{color:#4b6079;max-width:720px;line-height:1.7}
+    .breadcrumb{font-family:'Inter',sans-serif;color:#527092;letter-spacing:0;text-transform:none}
+    .breadcrumb a{color:#285b93}
+    .page-view .grid-2>div,.page-view .grid-3>div,.page-view .grid-4>div{border-radius:24px}
+    .page-view .grid-2>div,.page-view .grid-3>div,.page-view .grid-4>div{transition:transform .22s ease,box-shadow .22s ease}
+    .page-view .grid-3>div:hover,.page-view .grid-4>div:hover{transform:translateY(-3px);box-shadow:var(--shadow-md)}
+    .form-control{min-height:54px;background:#f7f9fc;border:1px solid #cbd6e5;border-radius:14px;padding:.9rem 1rem}
+    .form-control:focus{border-color:#3266a5;box-shadow:0 0 0 3px rgba(50,102,165,.12)}
+    .form-label{font-weight:650;color:#35475d}
+    .sidebar-cta-box{border-radius:24px;box-shadow:var(--shadow-sm)}
+    .site-footer{background:#10243f}
+    .footer-brand-image{width:min(100%,255px)}
+    button,a,input,select,textarea{accent-color:#3266a5}
+    @media(max-width:1023px){.header-inner{min-height:72px}.brand-logo{max-width:min(56vw,230px)}}
+    @media(max-width:639px){.container{width:min(100% - 30px,1200px)}.hero-slider{min-height:590px}.hero-text-box{padding:1.35rem;border-radius:20px}.hero-title{font-size:clamp(2.1rem,9vw,3rem)}.page-banner{padding:2.8rem 0}.section{padding-top:3.3rem;padding-bottom:3.3rem}.brand-logo img{max-height:54px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.page-view .grid-2>div,.page-view .grid-3>div,.page-view .grid-4>div{transition:none}}
+
   </style>
 </head>
 <body>
