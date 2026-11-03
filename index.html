@@ -1260,7 +1260,45 @@
     @media(max-width:479px){.container{width:min(100% - 28px,1200px)}.brand-logo{max-width:min(57vw,205px)}.hero-title{font-size:clamp(1.8rem,8vw,2.3rem)}.hero-btn-group{align-items:stretch}.hero-btn-group .btn{width:100%;justify-content:center}.hero-slide-content{padding-bottom:6.5rem}.hero-controls-inner{gap:.5rem}.page-banner{padding:2rem 0}.form-card .grid-2{gap:1rem!important}.lightbox-header,.lightbox-footer{padding:.75rem}.footer-bottom{gap:.65rem}}
     @media(prefers-reduced-motion:reduce){.card,.photo-frame img,.photo-frame-wide img{transition:none}.card:hover{transform:none}.photo-frame:hover img,.photo-frame-wide:hover img{transform:none}}
 
-  </style>
+  
+/* METALSA editorial: refinamientos específicos, sin alterar el sistema de navegación */
+#page-inicio .hero-slider{min-height:clamp(580px,62vw,730px)}
+#page-inicio .hero-slide-content{min-height:clamp(580px,62vw,730px)}
+#page-inicio .hero-text-box{max-width:760px}
+#page-inicio .hero-title{font-size:clamp(2.3rem,4.6vw,4.15rem);line-height:1.12;text-transform:none;letter-spacing:-.035em}
+#page-inicio .hero-lead{font-size:clamp(1.05rem,1.6vw,1.3rem);font-weight:700}
+#page-inicio .hero-slide-overlay{background:linear-gradient(90deg,rgba(3,16,36,.9) 0%,rgba(3,16,36,.65) 49%,rgba(3,16,36,.12) 100%)}
+#page-inicio .hero-slide-img{object-fit:cover;object-position:center}
+.page-view .section-title{text-transform:none}
+#page-nosotros .split-layout{align-items:start}
+#page-nosotros .split-layout>div:first-child>div:first-child{background:transparent!important;border-left:0!important;padding:0!important}
+#page-nosotros .split-layout>div:first-child>div:first-child h2{text-transform:none!important;line-height:1.25}
+#page-especialidades .specialty-row-card{border-left:0;border-radius:10px}
+#page-especialidades .specialty-row-card:nth-child(even) .specialty-row-grid>.photo-frame{order:2}
+#page-especialidades .specialty-row-grid{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr)}
+#page-especialidades .specialty-row-grid>.photo-frame{min-height:330px}
+#page-especialidades .specialty-row-content h3{text-transform:none!important;line-height:1.25}
+#page-proyectos .grid-3{grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem}
+#page-proyectos .gallery-item .photo-frame{aspect-ratio:16/10}
+#page-proyectos .gallery-item .card-body h3{text-transform:none!important;line-height:1.3}
+#page-proyectos .gallery-item .photo-badge{font-size:.67rem}
+.gallery-reference-note,.capabilities-note{font-size:.81rem;color:var(--slate-600);line-height:1.55;margin:0 0 1.3rem}
+.capabilities-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:1.5rem 0}
+.capabilities-grid>div{background:#fff;border:1px solid var(--slate-200);padding:1.35rem;display:flex;gap:.9rem;align-items:center;border-radius:8px}
+.capabilities-grid strong{font-family:Montserrat,sans-serif;color:var(--blue);font-size:1.55rem}
+.capabilities-grid span{font-weight:700;color:var(--navy);font-size:.9rem}
+.commercial-close{background:var(--navy);color:#fff;padding:clamp(3rem,6vw,5rem) 0}
+.commercial-close-inner{max-width:1200px}
+.commercial-close-inner>div{max-width:790px}
+.commercial-close h2{font-family:Montserrat,sans-serif;font-size:clamp(1.7rem,3.5vw,2.9rem);line-height:1.2;margin:.6rem 0 1rem}
+.commercial-close p{color:var(--slate-200);max-width:660px;margin-bottom:1.4rem;line-height:1.6}
+.form-group-heading{display:flex;align-items:center;gap:.8rem;border-bottom:1px solid var(--slate-200);padding:.35rem 0 .9rem;margin-top:.35rem}
+.form-group-heading h3{font:800 1rem Montserrat,sans-serif;color:var(--navy)}
+.form-group-heading p{font-size:.78rem;color:var(--slate-600);margin-top:.25rem}
+.form-step{background:var(--navy);color:#fff;font:800 .85rem Montserrat,sans-serif;padding:.7rem;border-radius:6px}
+@media(max-width:767px){#page-especialidades .specialty-row-grid{grid-template-columns:1fr}#page-especialidades .specialty-row-card:nth-child(even) .specialty-row-grid>.photo-frame{order:0}#page-especialidades .specialty-row-grid>.photo-frame{min-height:240px}#page-proyectos .grid-3{grid-template-columns:1fr}.capabilities-grid{grid-template-columns:1fr}.capabilities-grid>div{padding:1rem}#page-inicio .hero-title{font-size:clamp(2rem,8vw,2.9rem)}}
+
+</style>
 </head>
 <body>
   <a class="skip-link" href="#page-inicio">Saltar al contenido</a>
@@ -1409,7 +1447,7 @@
          =================================================================== -->
     <section id="page-inicio" class="page-view active" aria-label="Página de Inicio">
       
-      <!-- HERO SLIDER DE 4 FOTOGRAFÍAS REALES -->
+      <!-- HERO SLIDER: imágenes ilustrativas de referencia, no registro de obras propias -->
       <div id="heroSliderContainer" class="hero-slider" onmouseenter="pauseHeroAutoplay()" onmouseleave="resumeHeroAutoplay()">
         
         <!-- Diapositiva 1: Identidad Principal -->
@@ -1418,18 +1456,15 @@
             src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1600&q=80"
             alt="Estructuras Metálicas METALSA S.A.C."
             class="hero-slide-img"
+            fetchpriority="high"
             decoding="async"
           />
           <div class="hero-slide-overlay"></div>
           <div class="container hero-slide-content">
             <div class="hero-text-box">
               <span class="sub-badge-dark">METALSA | DISEÑO | CONSTRUCCIÓN | MONTAJE</span>
-              <h1 class="hero-title">
-                DISEÑAMOS.<br/>
-                <span>FABRICAMOS.</span><br/>
-                CONSTRUIMOS.
-              </h1>
-              <p class="hero-lead">Soluciones metálicas para grandes proyectos.</p>
+              <h1 class="hero-title">Ingeniería y <span>estructuras metálicas</span> para grandes proyectos.</h1>
+              <p class="hero-lead">Diseño, fabricación y montaje con enfoque técnico integral.</p>
               <p class="hero-desc">
                 Soluciones integrales de ingeniería, fabricación y montaje de estructuras metálicas para el sector industrial, comercial y de construcción.
               </p>
@@ -1838,6 +1873,8 @@
         </div>
       </div>
 
+      <div class="section section-light corporate-capabilities"><div class="container"><span class="sub-badge">CAPACIDADES DE SERVICIO</span><h2 class="section-title">Tres especialidades, una solución integral</h2><div class="capabilities-grid"><div><strong>01</strong><span>Techos y estructuras metálicas</span></div><div><strong>02</strong><span>Fabricación metalmecánica</span></div><div><strong>03</strong><span>Construcción y servicios</span></div></div><p class="capabilities-note">Estas son las tres áreas de servicio presentadas en nuestro catálogo. No representan cifras de proyectos ejecutados.</p></div></div>
+      <div class="commercial-close"><div class="container commercial-close-inner"><div><span class="sub-badge-dark">HABLEMOS DE SU PROYECTO</span><h2>Su próximo proyecto comienza con una evaluación técnica.</h2><p>Comparta sus requerimientos de ingeniería, fabricación o montaje con nuestro equipo.</p><a href="#cotizacion" onclick="handleMenuClick(event, 'cotizacion')" class="btn btn-amber">Solicitar cotización →</a></div></div></div>
     </section>
 
     <!-- ===================================================================
@@ -2686,6 +2723,7 @@
           </div>
 
           <!-- Grilla de Fotografías -->
+          <p class="gallery-reference-note">Imágenes referenciales de las soluciones ofrecidas. No constituyen un registro fotográfico de proyectos ejecutados por METALSA.</p>
           <div class="grid-3">
             
             <article data-category="techos" class="gallery-item card">
@@ -2878,6 +2916,7 @@
             <div id="quoteStatusBox" class="hidden" style="padding: 1rem; border-radius: 6px; margin-bottom: 1.25rem; font-size: 0.88rem;"></div>
 
             <form id="metalsaQuoteForm" onsubmit="handleQuoteSubmit(event)" novalidate style="display: flex; flex-direction: column; gap: 1.25rem;">
+              <div class="form-group-heading"><span class="form-step">01</span><div><h3>Datos de contacto</h3><p>Información para responder a su requerimiento.</p></div></div>
               <div class="grid-2" style="gap: 1.25rem;">
                 <div>
                   <label for="q_nombre" class="form-label">Nombre y apellidos *</label>
@@ -2897,6 +2936,7 @@
                 </div>
               </div>
 
+              <div class="form-group-heading"><span class="form-step">02</span><div><h3>Detalles del proyecto</h3><p>Especialidad, alcance y documentación técnica.</p></div></div>
               <div>
                 <label for="q_servicio" class="form-label">Tipo de servicio *</label>
                 <select id="q_servicio" required class="form-control">
