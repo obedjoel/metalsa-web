@@ -1192,6 +1192,74 @@
     .page-view img{max-width:100%}
     .brand-logo img{max-height:75px}
     @media(max-width:640px){.brand-logo{max-width:min(60vw,245px)}.brand-logo img{max-height:60px}.btn{white-space:normal;text-align:center}}
+  
+    /* METALSA refinamiento visual conservador — identidad y estructura originales */
+    :root{--radius:8px;--radius-lg:12px;--shadow-sm:0 2px 9px rgba(3,16,36,.065);--shadow-md:0 8px 22px rgba(3,16,36,.10);--shadow-lg:0 16px 36px rgba(3,16,36,.18)}
+    .container{width:min(100% - 36px,1200px)}
+    .header-inner{gap:clamp(.65rem,1.5vw,1.5rem)}
+    .brand-logo{max-width:clamp(190px,21vw,258px);flex-shrink:1}
+    .brand-logo img{max-height:62px}
+    .desktop-nav{gap:clamp(.45rem,1.15vw,1.25rem)}
+    .nav-link{font-size:.72rem;letter-spacing:.035em;padding:.8rem .2rem;white-space:nowrap}
+    .nav-link::after{height:2px}
+    .nav-dropdown-menu{border-top:3px solid var(--amber);border-radius:0 0 10px 10px;padding:.6rem;box-shadow:var(--shadow-lg)}
+    .dropdown-item{border-radius:6px}
+    .dropdown-item:hover,.dropdown-item:focus-visible{background-color:var(--slate-100)}
+    .header-actions{flex-shrink:0}
+    .btn{min-height:44px;border-radius:7px;padding:.78rem 1.25rem;line-height:1.35;transition:background-color .18s ease,border-color .18s ease,box-shadow .18s ease}
+    .btn:hover{transform:none;box-shadow:0 4px 12px rgba(3,16,36,.14)}
+    .hero-slider{border-bottom-width:3px}
+    .hero-slide-content{padding-top:3.5rem;padding-bottom:6rem}
+    .hero-text-box{max-width:680px}
+    .hero-title{font-size:clamp(2.1rem,4.5vw,3.5rem);line-height:1.13;letter-spacing:-.025em;text-wrap:balance}
+    .hero-lead,.hero-desc{max-width:620px;line-height:1.65}
+    .hero-btn-group{gap:.75rem}
+    .hero-controls-bar{bottom:1rem}
+    .hero-dot{height:9px;width:9px}
+    .hero-dot.active{width:27px}
+    .hero-arrow-btn{width:40px;height:40px;border-radius:6px}
+    .page-banner{background:var(--navy);padding:2.9rem 0;border-bottom:3px solid var(--amber)}
+    .banner-title{font-size:clamp(1.85rem,3.3vw,2.75rem);letter-spacing:-.015em;line-height:1.18;text-wrap:balance}
+    .banner-subtitle{line-height:1.65;max-width:760px}
+    .section{padding-top:clamp(3rem,5vw,4.8rem);padding-bottom:clamp(3rem,5vw,4.8rem)}
+    .section-title{font-size:clamp(1.7rem,3vw,2.35rem);line-height:1.22;letter-spacing:-.02em;text-wrap:balance}
+    .grid-2,.grid-3,.grid-4{row-gap:1.5rem}
+    .split-layout{gap:clamp(1.6rem,3vw,3rem)}
+    .card,.specialty-row-card,.sidebar-box,.form-card{border-radius:10px;box-shadow:var(--shadow-sm)}
+    .card:hover{transform:translateY(-2px);box-shadow:var(--shadow-md);border-color:var(--slate-300)}
+    .card-body{padding:clamp(1.15rem,2vw,1.55rem)}
+    .specialty-row-card{border-left-width:3px}
+    .specialty-row-content{gap:1rem}
+    .photo-frame,.photo-frame-wide{border-radius:9px;box-shadow:var(--shadow-sm)}
+    .photo-frame img,.photo-frame-wide img{width:100%;height:100%;object-fit:cover}
+    .photo-frame:hover img,.photo-frame-wide:hover img{transform:scale(1.015)}
+    .gallery-item{min-width:0}
+    .gallery-item img{width:100%;object-fit:cover}
+    .gallery-filter-btn{font-size:.8rem}
+    .lightbox-backdrop{padding:clamp(.5rem,2vw,1.5rem)}
+    .lightbox-dialog{max-width:min(100%,980px);max-height:calc(100dvh - 2rem);display:flex;flex-direction:column;border-radius:10px}
+    .lightbox-header,.lightbox-footer{flex-shrink:0}
+    .lightbox-body{aspect-ratio:auto;min-height:0;flex:1;max-height:70dvh}
+    .lightbox-body img{display:block;max-height:70dvh;object-fit:contain}
+    .lightbox-close-btn{flex-shrink:0}
+    .form-card{padding:clamp(1.15rem,3vw,2.1rem)}
+    .form-control{border-radius:7px;min-height:48px;line-height:1.45}
+    .form-label{line-height:1.4}
+    .sidebar-cta-box{border-top-width:3px;border-radius:10px}
+    .site-footer{border-top-width:3px;padding:3.25rem 0 1.5rem}
+    .footer-grid{gap:clamp(1.5rem,3vw,3rem)}
+    .footer-heading{letter-spacing:.045em}
+    .footer-links{line-height:1.65}
+    .footer-brand-image{max-width:240px}
+    .footer-bottom{margin-top:2rem}
+    a,button,input,textarea,select{transition-duration:.18s}
+    a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+    @media(min-width:1024px) and (max-width:1199px){.brand-logo{max-width:205px}.desktop-nav{gap:.5rem}.nav-link{font-size:.68rem;letter-spacing:0}.header-cta-desktop{font-size:.73rem;padding:.65rem .8rem}}
+    @media(max-width:1023px){.header-inner{min-height:70px}.brand-logo{max-width:min(56vw,230px)}.brand-logo img{max-height:57px}.mobile-menu-toggle{width:44px;height:44px}.mobile-drawer{max-height:calc(100dvh - 72px);overflow-y:auto;overscroll-behavior:contain}.mobile-nav-link{min-height:44px}}
+    @media(max-width:767px){.hero-slide-content{padding-top:2.5rem;padding-bottom:6rem}.hero-title{font-size:clamp(1.9rem,7vw,2.65rem)}.hero-desc{font-size:.94rem}.page-banner{padding:2.4rem 0}.hero-controls-bar{bottom:.65rem}.hero-arrow-btn{width:38px;height:38px}.section{padding-top:2.75rem;padding-bottom:2.75rem}.form-card{padding:1.2rem}.footer-grid{gap:2rem}}
+    @media(max-width:479px){.container{width:min(100% - 28px,1200px)}.brand-logo{max-width:min(57vw,205px)}.hero-title{font-size:clamp(1.8rem,8vw,2.3rem)}.hero-btn-group{align-items:stretch}.hero-btn-group .btn{width:100%;justify-content:center}.hero-slide-content{padding-bottom:6.5rem}.hero-controls-inner{gap:.5rem}.page-banner{padding:2rem 0}.form-card .grid-2{gap:1rem!important}.lightbox-header,.lightbox-footer{padding:.75rem}.footer-bottom{gap:.65rem}}
+    @media(prefers-reduced-motion:reduce){.card,.photo-frame img,.photo-frame-wide img{transition:none}.card:hover{transform:none}.photo-frame:hover img,.photo-frame-wide:hover img{transform:none}}
+
   </style>
 </head>
 <body>
