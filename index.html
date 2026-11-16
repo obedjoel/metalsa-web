@@ -1453,8 +1453,8 @@
         <!-- Diapositiva 1: Identidad Principal -->
         <div class="hero-slide active">
           <img
-            src="/assets/proyectos/cubierta-metalica-interior.webp"
-            alt="Estructuras Metálicas METALSA S.A.C."
+            src="/assets/proyectos/puerto92-render-frontal.webp"
+            alt="Render arquitectónico frontal del proyecto Puerto 92"
             class="hero-slide-img"
             fetchpriority="high"
             decoding="async"
@@ -2561,8 +2561,8 @@
           <div>
             <div class="photo-frame-wide" onclick="openLightbox('foto-p5')" style="cursor: pointer; margin-bottom: 2rem;">
               <img
-                src="/assets/proyectos/acceso-puerto92-terminado.webp"
-                alt="Proyecto Comercial y Estructural Puerto 92"
+                src="/assets/proyectos/puerto92-render-perspectiva.webp"
+                alt="Render arquitectónico en perspectiva del proyecto Puerto 92"
                 loading="lazy"
                 decoding="async"
               />
@@ -2723,9 +2723,10 @@
           </div>
 
           <!-- Grilla de Fotografías -->
-          <p class="gallery-reference-note">Imágenes referenciales de las soluciones ofrecidas. No constituyen un registro fotográfico de proyectos ejecutados por METALSA.</p>
+          <p class="gallery-reference-note">Galería de trabajos y visualizaciones arquitectónicas. Las imágenes de Puerto 92 identificadas como renders representan el diseño del proyecto.</p>
           <div class="grid-3">
-            
+            <article data-category="construccion" class="gallery-item card"><div class="photo-frame" onclick="openLightbox('foto-puerto92-frontal')" style="cursor:pointer;border-radius:0;border:none;"><img src="/assets/proyectos/puerto92-render-frontal.webp" alt="Render frontal del proyecto Puerto 92" loading="lazy" decoding="async" /><span class="photo-badge">PUERTO 92 · RENDER ARQUITECTÓNICO</span></div><div class="card-body"><h3 class="font-display" style="font-size:1.05rem;font-weight:800;color:var(--navy);text-transform:uppercase;">Puerto 92 — Vista frontal</h3><button type="button" onclick="openLightbox('foto-puerto92-frontal')" style="margin-top:1rem;background:none;border:none;color:var(--blue);cursor:pointer;font-weight:800;">AMPLIAR IMAGEN</button></div></article>
+            <article data-category="construccion" class="gallery-item card"><div class="photo-frame" onclick="openLightbox('foto-puerto92-perspectiva')" style="cursor:pointer;border-radius:0;border:none;"><img src="/assets/proyectos/puerto92-render-perspectiva.webp" alt="Render en perspectiva del proyecto Puerto 92" loading="lazy" decoding="async" /><span class="photo-badge">PUERTO 92 · RENDER ARQUITECTÓNICO</span></div><div class="card-body"><h3 class="font-display" style="font-size:1.05rem;font-weight:800;color:var(--navy);text-transform:uppercase;">Puerto 92 — Vista en perspectiva</h3><button type="button" onclick="openLightbox('foto-puerto92-perspectiva')" style="margin-top:1rem;background:none;border:none;color:var(--blue);cursor:pointer;font-weight:800;">AMPLIAR IMAGEN</button></div></article>
             <article data-category="techos" class="gallery-item card">
               <div class="photo-frame" onclick="openLightbox('foto-p3')" style="cursor: pointer; border-radius: 0; border: none;">
                 <img
@@ -2807,8 +2808,8 @@
             <article data-category="construccion" class="gallery-item card">
               <div class="photo-frame" onclick="openLightbox('foto-p5')" style="cursor: pointer; border-radius: 0; border: none;">
                 <img
-                  src="/assets/proyectos/acceso-puerto92-terminado.webp"
-                  alt="Proyecto Comercial y Estructural Puerto 92"
+                  src="/assets/proyectos/puerto92-render-perspectiva.webp"
+                  alt="Render arquitectónico en perspectiva del proyecto Puerto 92"
                   loading="lazy"
                   decoding="async"
                 />
@@ -3142,6 +3143,8 @@
     };
 
     const PHOTO_DATA = {
+      'foto-puerto92-frontal': { badge: 'Puerto 92 · Render arquitectónico', title: 'Puerto 92 — Vista frontal', desc: 'Visualización arquitectónica del proyecto Puerto 92.', src: '/assets/proyectos/puerto92-render-frontal.webp', fallback: '/assets/proyectos/puerto92-render-frontal.webp' },
+      'foto-puerto92-perspectiva': { badge: 'Puerto 92 · Render arquitectónico', title: 'Puerto 92 — Vista en perspectiva', desc: 'Visualización arquitectónica del proyecto Puerto 92.', src: '/assets/proyectos/puerto92-render-perspectiva.webp', fallback: '/assets/proyectos/puerto92-render-perspectiva.webp' },
       'foto-p3': {
         badge: 'Techos y Estructuras Metálicas',
         title: 'Cobertura Industrial Parabólica de Gran Luz',
@@ -3166,9 +3169,9 @@
       'foto-p5': {
         badge: 'Construcción y Servicios',
         title: 'Proyecto Comercial y Estructural Puerto 92',
-        desc: 'Diseño y construcción en drywall, divisiones, tabiquería, cielos rasos y remodelación de ambientes.',
-        src: '/assets/proyectos/acceso-puerto92-terminado.webp',
-        fallback: '/assets/proyectos/acceso-puerto92-terminado.webp'
+        desc: 'Visualización arquitectónica del proyecto comercial Puerto 92.',
+        src: '/assets/proyectos/puerto92-render-perspectiva.webp',
+        fallback: '/assets/proyectos/puerto92-render-perspectiva.webp'
       },
       'foto-cubierta-curva-montaje': { badge: 'Techos y Estructuras Metálicas', title: 'Montaje de cubierta curva', desc: 'Registro fotográfico de trabajos de estructuras metálicas.', src: '/assets/proyectos/cubierta-curva-montaje.webp', fallback: '/assets/proyectos/cubierta-curva-montaje.webp' },
       'foto-estructura-arcos-exterior': { badge: 'Techos y Estructuras Metálicas', title: 'Arcos estructurales en obra', desc: 'Registro fotográfico de trabajos de estructuras metálicas.', src: '/assets/proyectos/estructura-arcos-exterior.webp', fallback: '/assets/proyectos/estructura-arcos-exterior.webp' },
