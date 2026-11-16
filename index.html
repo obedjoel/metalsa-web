@@ -3205,6 +3205,19 @@
       navigateToRoute(targetRoute);
     }
 
+
+let metalsaObserver;
+function initMetalsaMotion(){
+ const page=document.querySelector('.page-view.active');if(!page)return;
+ if(metalsaObserver)metalsaObserver.disconnect();
+ const els=page.querySelectorAll('.section h2,.section h3,.section .photo-frame,.section .photo-frame-wide,.section .card,.section .split-layout > *,.section .specialty-row-grid > *');
+ const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ els.forEach(el=>{el.classList.add('metalsa-reveal');if(reduced||!('IntersectionObserver' in window))el.classList.add('is-visible');else el.classList.remove('is-visible')});
+ if(reduced||!('IntersectionObserver' in window))return;
+ metalsaObserver=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');metalsaObserver.unobserve(e.target)}}),{threshold:.05,rootMargin:'0px 0px 50px 0px'});
+ els.forEach(el=>metalsaObserver.observe(el));
+}
+
     function navigateToRoute(routeKey) {
       const cleanRoute = (routeKey || 'inicio').toLowerCase().trim();
       const validRoute = ROUTES_META[cleanRoute] ? cleanRoute : 'inicio';
@@ -3241,7 +3254,8 @@
       const metaDesc = document.querySelector('meta[name="description"]');
       if (metaDesc) metaDesc.setAttribute('content', ROUTES_META[validRoute].desc);
 
-      window.scrollTo({ top: 0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+      window.scrollTo({ top: 0, behavior: 'instant' });
+      initMetalsaMotion();
     }
 
     window.addEventListener('hashchange', () => {
